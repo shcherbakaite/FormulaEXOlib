@@ -18,9 +18,7 @@ if(NOT glm_FOUND)
     endif()
 endif()
 
-add_library(FormulaEXOlib STATIC library.cpp
-        VehicleController.cpp
-        VehicleController.h)
+add_library(FormulaEXOlib STATIC library.cpp)
 target_include_directories(FormulaEXOlib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(FormulaEXOlib PUBLIC glm::glm)
 
